@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { RiImageAddFill } from "react-icons/ri";
 import {
   MdEditDocument,
@@ -11,8 +11,17 @@ const Note = ({ index, note, editNote, deleteNote }) => {
   const [isEditing, setEditing] = useState(false);
   const [editedTitle, setEditedTitle] = useState(note.title);
   const [editedContent, setEditedContent] = useState(note.content);
-  const [editedColor, setEditedColor] = useState(note.backgroundColor || "#FAF9F6");
+  const [editedColor, setEditedColor] = useState(
+    note.backgroundColor || "#FAF9F6"
+  );
   const [editedImage, setEditedImage] = useState(note.image);
+
+  useEffect(() => {
+    setEditedTitle(note.title);
+    setEditedContent(note.content);
+    setEditedColor(note.backgroundColor || "#FAF9F6");
+    setEditedImage(note.image);
+  }, [note]);
 
   const handleEdit = () => {
     setEditing(true);
