@@ -32,7 +32,8 @@ Before you begin, ensure you have the following installed on your machine:
 ### Usage
 
   To run the application locally, use the following command: 
-    npm install
+     ```bash
+     npm install
 
   This will start the development server. Open http://localhost:3000 in your browser to view the application.
 
