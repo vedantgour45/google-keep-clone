@@ -1,0 +1,138 @@
+.note {
+  border-radius: 8px;
+  padding-top: 2px;
+  padding-inline: 2px;
+  padding-bottom: 10px;
+  margin: 20px;
+  background-color: #FAF9F6;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid #bdbdbd;
+}
+
+.note:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.note .subtitle {
+  margin-top: -10px;
+}
+
+
+.edited-title {
+  background-color: transparent;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  border: none;
+  outline: none;
+}
+
+.edited-subtitle {
+  background-color: transparent;
+  width: 100%;
+  min-height: 70px;
+  resize: none;
+  font-size: 16px;
+  line-height: 1.5;
+  border: none;
+  outline: none;
+}
+
+::placeholder {
+  color: #FAF9F6;
+}
+
+.edited-color-bg {
+  margin-top: 10px;
+}
+
+.edited-image-input {
+  padding-top: 10px;
+  background-color: transparent;
+}
+
+
+.note h3,
+.note p {
+  background-color: transparent;
+  padding-left: 12px;
+}
+
+.note img {
+  border-radius: 6px;
+  width: auto;
+  height: 50%;
+}
+
+.note-actions {
+  padding-left: 12px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  background-color: transparent;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.action {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.note:hover .note-actions,
+.note:hover .action {
+  opacity: 1;
+}
+
+
+.note button {
+  margin-right: 5px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 5px 8px;
+  font-weight: 500;
+}
+
+.note button:hover {
+  cursor: pointer;
+  backdrop-filter: contrast(150%);
+}
+
+.note .save {
+  display: flex;
+  margin-top: 15px;
+  width: fit-content;
+}
+
+.save:hover {
+  cursor: pointer;
+  backdrop-filter: contrast(150%);
+}
+
+.add-edited-image input {
+  display: none;
+}
+
+.add-edited-image,
+.add-edited-image label,
+.editedimage {
+  background-color: transparent;
+}
+
+.add-edited-image .add-image {
+  background-color: transparent;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  margin-top: 10px;
+}

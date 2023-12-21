@@ -1,0 +1,102 @@
+.note-form {
+  border: 1px solid #bdbdbd;
+  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 20px;
+  max-width: 60%;
+  margin-inline: auto;
+}
+
+.note-form input {
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  padding: 8px;
+  border: none;
+  outline: none;
+
+}
+
+.note-form form input {
+  display: none;
+}
+
+.note-form .add-image {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.note-form form {
+  margin-top: 10px;
+}
+
+.note-form .bottom-options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.note-form .bottom-options .bottom-options-left {
+  display: flex;
+  margin-left: 5px;
+}
+
+.form-image {
+  position: relative
+}
+
+.change-color {
+  background-color: transparent;
+}
+
+.change-color label {
+  background-color: transparent;
+}
+
+.form-image img {
+  border-radius: 10px;
+}
+
+.form-image .remove {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  background-color: transparent;
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+}
+
+.note-form.expanded {
+  height: auto;
+}
+
+.note-form textarea {
+  width: 100%;
+  margin-left: 5px;
+  resize: none;
+  font-size: 16px;
+  line-height: 1.5;
+  border: none;
+  outline: none;
+}
+
+.note-form button {
+  margin-right: 5px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 5px 8px;
+}
+
+.note-form button:hover {
+  cursor: pointer;
+  backdrop-filter: contrast(70%);
+}
+
+::placeholder {
+  color: #85858b;
+}
