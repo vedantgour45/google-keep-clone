@@ -20,8 +20,11 @@ const App = () => {
     setFilteredNotes([...notes]);
   }, [notes]);
 
-  const addNote = (title, content, color, image) => {
-    setNotes((prevNotes) => [{ title, content, color, image }, ...prevNotes]);
+  const addNote = (title, content, backgroundColor, image) => {
+    setNotes((prevNotes) => [
+      { title, content, color: backgroundColor, image },
+      ...prevNotes,
+    ]);
   };
 
   const editNote = (index, updatedNote) => {

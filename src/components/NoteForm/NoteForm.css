@@ -39,6 +39,7 @@
 
 .note-form .bottom-options .bottom-options-left {
   display: flex;
+  gap: 10px;
   margin-left: 5px;
 }
 

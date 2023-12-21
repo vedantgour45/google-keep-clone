@@ -61,7 +61,7 @@ const Note = ({ index, note, editNote, deleteNote }) => {
             value={editedContent}
             onChange={(e) => setEditedContent(e.target.value)}
           />
-          <div className="change-color"> 
+          <div className="change-color">
             <label htmlFor="change-color">Change Background Color : </label>
             <input
               id="change-color"

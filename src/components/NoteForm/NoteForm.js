@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { MdDeleteForever } from "react-icons/md";
 import { RiImageAddFill } from "react-icons/ri";
+import { IoIosColorPalette } from "react-icons/io";
 import "./NoteForm.css";
 
 const NoteForm = ({ addNote }) => {
@@ -8,6 +9,7 @@ const NoteForm = ({ addNote }) => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [image, setImage] = useState(null);
+  const [backgroundColor, setBackgroundColor] = useState("#FAF9F6"); // Default color
 
   const formRef = useRef(null);
 
@@ -21,7 +23,7 @@ const NoteForm = ({ addNote }) => {
         setExpanded(false);
         // Save note only if it is not empty
         if (title.trim() !== "" || content.trim() !== "" || image) {
-          addNote(title, content, "#FAF9F6", image);
+          addNote(title, content, backgroundColor, image);
           setTitle("");
           setContent("");
           setImage(null);
@@ -43,7 +45,7 @@ const NoteForm = ({ addNote }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (title.trim() !== "" || content.trim() !== "" || image) {
-      addNote(title, content, "#FAF9F6", image);
+      addNote(title, content, backgroundColor, image);
       setTitle("");
       setContent("");
       setImage(null);
@@ -107,7 +109,22 @@ const NoteForm = ({ addNote }) => {
                 accept="image/*"
                 onChange={handleImageChange}
               />
+              <label htmlFor="addColor">
+                <IoIosColorPalette
+                  className="add-image"
+                  style={{ fill: "#575757" }}
+                  data-tooltip-id="my-tooltip"
+                  data-tooltip-content="Set Background"
+                />
+              </label>
+              <input
+                id="addColor"
+                type="color"
+                value={backgroundColor}
+                onChange={(e) => setBackgroundColor(e.target.value)}
+              />
             </div>
+
             <div>
               <button type="submit">Close</button>
             </div>
