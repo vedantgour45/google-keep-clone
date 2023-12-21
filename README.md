@@ -1,3 +1,44 @@
+# Google Keep Clone
+
+A simple Google Keep clone built with React.
+
+## Getting Started
+
+These instructions will help you set up and run the project on your local machine.
+
+### Prerequisites
+
+Before you begin, ensure you have the following installed on your machine:
+
+- Node.js: [Download and Install Node.js](https://nodejs.org/)
+
+### Installation
+
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/vedantgour45/google-keep-clone.git
+   
+2. Navigate to the project directory:
+   
+   ```bash
+   cd google-keep-clone
+
+3. Install project dependencies:
+
+   ```bash
+   npm install
+
+### Usage
+
+   To run the application locally, use the following command: npm start
+
+   This will start the development server. Open http://localhost:3000 in your browser to view the application.
+
+
+====================================================================================================================================================
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
