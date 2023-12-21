@@ -31,8 +31,7 @@ Before you begin, ensure you have the following installed on your machine:
 
 ### Usage
 
-  1. To run the application locally, use the following command:
-  2. ```bash
+  1. ```bash To run the application locally, use the following command:
     npm start
 
    
