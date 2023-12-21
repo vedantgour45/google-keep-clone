@@ -11,7 +11,7 @@ const Note = ({ index, note, editNote, deleteNote }) => {
   const [isEditing, setEditing] = useState(false);
   const [editedTitle, setEditedTitle] = useState(note.title);
   const [editedContent, setEditedContent] = useState(note.content);
-  const [editedColor, setEditedColor] = useState(note.color || "#FAF9F6");
+  const [editedColor, setEditedColor] = useState(note.backgroundColor || "#FAF9F6");
   const [editedImage, setEditedImage] = useState(note.image);
 
   const handleEdit = () => {

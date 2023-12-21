@@ -9,7 +9,7 @@ const NoteForm = ({ addNote }) => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [image, setImage] = useState(null);
-  const [backgroundColor, setBackgroundColor] = useState("#FAF9F6"); // Default color
+  const [backgroundColor, setBackgroundColor] = useState("#FAF9F6");
 
   const formRef = useRef(null);
 
@@ -27,6 +27,7 @@ const NoteForm = ({ addNote }) => {
           setTitle("");
           setContent("");
           setImage(null);
+          setBackgroundColor("#FAF9F6");
         }
       }
     };
@@ -50,6 +51,7 @@ const NoteForm = ({ addNote }) => {
       setContent("");
       setImage(null);
       setExpanded(false);
+      setBackgroundColor("#FAF9F6");
     }
   };
 
