@@ -128,7 +128,7 @@ const NoteForm = ({ addNote }) => {
             </div>
 
             <div>
-              <button type="submit">Close</button>
+              <button type="submit">Save</button>
             </div>
           </div>
         </form>
